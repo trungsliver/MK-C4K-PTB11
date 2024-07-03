@@ -31,4 +31,4 @@ if num % 2 == 0:
 else:
     print(num, "là số lẻ.")
 
-
+# $ git remote add origin https://github.com/trungsliver/MK-C4K-PTB11.git
