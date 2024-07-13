@@ -55,65 +55,65 @@ def print_arr(arr):
 # Bài tập: Đăng ký - Đăng nhập
 users = ['admin:123456']        # Cấu trúc tài khoản trong danh sách: 'username:password'
 
-    # Đăng ký
-def register():
-    username = input('Nhập username: ')
-    password = input('Nhập password: ')
-    check = True
-    # Nếu để trống username hoặc password thì không đăng ký được
-    if username == '' or password == '':
-        check = False
-        print('Nhập thiếu thông tin!')
-    else:
-        # Duyệt các tài khoản có trong danh sách users
-        for user in users:
-            # Chia 1 user thành 2 phần username và password
-            stored_username, stored_password = user.split(':')
-            # Nếu trùng tên tài khoản thì không đăng ký được
-            if username == stored_username:
-                check = False
-                print('Tài khoản đã tồn tại!')
-    # Kiểm tra xem có đăng ký thành công không
-    if check == True:
-        # Nếu đăng đăng ký thành công thì add tài khoản mới vào danh sách users
-        new_acc = username + ':' + password     
-        users.append(new_acc)
-        print('Đăng ký thành công!')
-    else:
-        print('Đăng ký không thành công!')
+#     # Đăng ký
+# def register():
+#     username = input('Nhập username: ')
+#     password = input('Nhập password: ')
+#     check = True
+#     # Nếu để trống username hoặc password thì không đăng ký được
+#     if username == '' or password == '':
+#         check = False
+#         print('Nhập thiếu thông tin!')
+#     else:
+#         # Duyệt các tài khoản có trong danh sách users
+#         for user in users:
+#             # Chia 1 user thành 2 phần username và password
+#             stored_username, stored_password = user.split(':')
+#             # Nếu trùng tên tài khoản thì không đăng ký được
+#             if username == stored_username:
+#                 check = False
+#                 print('Tài khoản đã tồn tại!')
+#     # Kiểm tra xem có đăng ký thành công không
+#     if check == True:
+#         # Nếu đăng đăng ký thành công thì add tài khoản mới vào danh sách users
+#         new_acc = username + ':' + password     
+#         users.append(new_acc)
+#         print('Đăng ký thành công!')
+#     else:
+#         print('Đăng ký không thành công!')
 
 
-    # Đăng nhập
-def login():
-    username = input('Nhập username: ')
-    password = input('Nhập password: ')
-    check = False
-    for user in users:
-        stored_username, stored_password = user.split(":")
-        if stored_username == username and stored_password == password:
-            check = True
+#     # Đăng nhập
+# def login():
+#     username = input('Nhập username: ')
+#     password = input('Nhập password: ')
+#     check = False
+#     for user in users:
+#         stored_username, stored_password = user.split(":")
+#         if stored_username == username and stored_password == password:
+#             check = True
     
-    if check == True:
-        print("Đăng nhập thành công")
-    else:
-        print("Đăng nhập không thành công.")
+#     if check == True:
+#         print("Đăng nhập thành công")
+#     else:
+#         print("Đăng nhập không thành công.")
 
-def main():
-    while True:
-        print('\n---------------DEF---------------')
-        print("1. Đăng ký")
-        print("2. Đăng nhập")
-        print("3. Thoát")
-        print('---------------------------------')
-        choice = input('Nhập lựa chọn của bạn: ')
+# def main():
+#     while True:
+#         print('\n---------------DEF---------------')
+#         print("1. Đăng ký")
+#         print("2. Đăng nhập")
+#         print("3. Thoát")
+#         print('---------------------------------')
+#         choice = input('Nhập lựa chọn của bạn: ')
 
-        if choice == '1':
-            register()
-        elif choice == '2':
-            login()
-        elif choice == '3':
-            break
-        else:
-            print('Lựa chọn không hợp lệ!')
+#         if choice == '1':
+#             register()
+#         elif choice == '2':
+#             login()
+#         elif choice == '3':
+#             break
+#         else:
+#             print('Lựa chọn không hợp lệ!')
 
-main()
+# main()
