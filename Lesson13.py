@@ -36,5 +36,5 @@ import string
 name = 'dUc tRuNG vIp pRO'
 # print(string.upper(name))
 print(string.capwords(name))
-a = string.upper(name)
-print(a)
+# a = string.upper(name)
+# print(a)

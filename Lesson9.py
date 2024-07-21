@@ -5,53 +5,53 @@
 product = ['Quần', 'Áo', 'Người', 'Laptop', 'Đồ ăn', 'Vũ khí']
 cart = []
 
-#     # Switch - case: để chọn chức năng
-# while True:
-#     print('\n=============== SHOPPING CART ===============')
-#     print('1. Xem danh sách sản phẩm.')
-#     print('2. Xem giỏ hàng.')
-#     print('3. Thêm sản phẩm vào giỏ hàng.')
-#     print('4. Xóa sản phẩm khỏi giỏ hàng.')
-#     print('5. Thoát.')
-#     print('===============================================')
-#     choice = int(input('Hãy nhập lựa chọn của bạn: '))
+    # Switch - case: để chọn chức năng
+while True:
+    print('\n=============== SHOPPING CART ===============')
+    print('1. Xem danh sách sản phẩm.')
+    print('2. Xem giỏ hàng.')
+    print('3. Thêm sản phẩm vào giỏ hàng.')
+    print('4. Xóa sản phẩm khỏi giỏ hàng.')
+    print('5. Thoát.')
+    print('===============================================')
+    choice = int(input('Hãy nhập lựa chọn của bạn: '))
 
-#     # Chức năng 1
-#     if choice == 1:
-#         print('\n========== Danh sách sản phẩm ==========')
-#         for i in range(len(product)):
-#             print(f'[{i+1}] {product[i]}')
-#         print('==========================================')
-#     elif choice == 2:
-#         if not cart:
-#             print('Giỏ hàng trống.')
-#         else:
-#             print('\n========== Sản phẩm trong giỏ hàng ==========')
-#             for i in range(len(cart)):
-#                 print(f'[{i+1}] {cart[i]}')
-#             print('===============================================')
-#     elif choice == 3:
-#         print('\n========== Thêm sản phẩm vào giỏ hàng ==========')
-#         addPro = int(input('Nhập chỉ số sản phẩm bạn muốn thêm vào giỏ hàng: '))
-#         addPro = addPro - 1     # Đưa index đúng với danh sách
-#         if abs(addPro) < len(product):
-#             cart.append(product[addPro])
-#             print('Thêm sản phẩm thành công!')
-#         else:
-#             print('Thêm sản phẩm thất bại!')
-#         print('==================================================')
-#     elif choice == 4:
-#         print('\n========== Xóa sản phẩm khỏi giỏ hàng ==========')
-#         delPro = int(input('Nhập chỉ số sản phẩm bạn muốn xóa khỏi giỏ hàng: '))
-#         delPro = delPro - 1     # Đưa index đúng với danh sách
-#         if abs(delPro) < len(cart):
-#             cart.pop(delPro)
-#             print('Xóa sản phẩm thành công!')
-#         else:
-#             print('Xóa sản phẩm thất bại!')
-#         print('==================================================')
-#     else:
-#         break
+    # Chức năng 1
+    if choice == 1:
+        print('\n========== Danh sách sản phẩm ==========')
+        for i in range(len(product)):
+            print(f'[{i+1}] {product[i]}')
+        print('==========================================')
+    elif choice == 2:
+        if not cart:
+            print('Giỏ hàng trống.')
+        else:
+            print('\n========== Sản phẩm trong giỏ hàng ==========')
+            for i in range(len(cart)):
+                print(f'[{i+1}] {cart[i]}')
+            print('===============================================')
+    elif choice == 3:
+        print('\n========== Thêm sản phẩm vào giỏ hàng ==========')
+        addPro = int(input('Nhập chỉ số sản phẩm bạn muốn thêm vào giỏ hàng: '))
+        addPro = addPro - 1     # Đưa index đúng với danh sách
+        if abs(addPro) < len(product):
+            cart.append(product[addPro])
+            print('Thêm sản phẩm thành công!')
+        else:
+            print('Thêm sản phẩm thất bại!')
+        print('==================================================')
+    elif choice == 4:
+        print('\n========== Xóa sản phẩm khỏi giỏ hàng ==========')
+        delPro = int(input('Nhập chỉ số sản phẩm bạn muốn xóa khỏi giỏ hàng: '))
+        delPro = delPro - 1     # Đưa index đúng với danh sách
+        if abs(delPro) < len(cart):
+            cart.pop(delPro)
+            print('Xóa sản phẩm thành công!')
+        else:
+            print('Xóa sản phẩm thất bại!')
+        print('==================================================')
+    else:
+        break
 
 # Bài tập 2: Tính tổng các phần tử có trong danh sách là số lẻ
     # Khởi tạo danh sách
