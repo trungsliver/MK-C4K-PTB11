@@ -2,12 +2,12 @@
 # VD: PTB11_DucTrung_hackathon.py
 
 # Đánh dấu bài
-    # Tuấn Minh:
+    # Tuấn Minh: 8.5
     # Chí Bảo:
-    # Bảo Phúc:
-    # Minh Tú: 1
+    # Bảo Phúc: 10
+    # Minh Tú: 8
     # Đức Tùng:
-    # Khang Anh:  -1 -1 -0.5 -0.5
+    # Khang Anh:  -1 -1 -0.5 -0.5 = 7
 
 # Ví dụ làm tròn
 a = 8.8888888
