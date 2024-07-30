@@ -3,13 +3,15 @@
 
 # Đánh dấu bài
     # Tuấn Minh: 8.5
-    # Chí Bảo:
+    # Chí Bảo: 9
     # Bảo Phúc: 10
     # Minh Tú: 8
-    # Đức Tùng:
+    # Đức Tùng: 6.5
     # Khang Anh:  -1 -1 -0.5 -0.5 = 7
 
 # Ví dụ làm tròn
 a = 8.8888888
 a = round(a, 2)
 print(a)
+
+-0.5 -0.5 -0.5 -0.5 -1 -2
