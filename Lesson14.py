@@ -220,3 +220,4 @@ def arr_avg(arr):
     avg = sum/len(arr)
     return sum
 print('Giá trị trung bình các phần tử:', arr_avg(arr))
+
